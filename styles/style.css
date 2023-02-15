@@ -101,4 +101,8 @@
     box-shadow: 0 0 1em #ff6b00;
     border-radius: 0.4em;
   }
+
+  .main-media li {
+    list-style: none;
+  }
 }
