@@ -9,7 +9,7 @@
 @media screen and (min-width: 375px) and (max-width: 768px) {
   /* Body */
   body {
-    background-color: #1C1A19;
+    background-color: #1c1a19;
     background-image: url(../media/Illustration.png);
     background-repeat: no-repeat;
     background-position-x: right;
@@ -22,7 +22,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #3C3A39;
+    background-color: #3c3a39;
     height: 60px;
     width: 100%;
     font-family: 'Roboto', sans-serif;
@@ -33,12 +33,12 @@
     text-align: center;
     font-size: 1em;
     margin-left: 8.5%;
-    color: #FFFFFF;
-    font-family: 'Roboto';
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
   }
 
   .nav-bar a:hover {
-    color: #FF6B00;
+    color: #ff6b00;
   }
 
   .menu {
@@ -55,7 +55,7 @@
     height: 8%;
     margin: 6%;
     border-radius: 10%;
-    background-color: #FFFFFF;
+    background-color: #fff;
   }
 
   /* Main Section */
@@ -67,21 +67,21 @@
   }
 
   .main-title {
-    color: #FF6B00;
-    font-family: 'Crete Round';
+    color: #ff6b00;
+    font-family: 'Crete Round', sans-serif;
     font-size: 3.5em;
     font-weight: 100;
     margin-bottom: 1.5%;
   }
 
   .main-subtitle {
-    color: #FFF5E1;
-    font-family: 'Roboto';
+    color: #fff5e1;
+    font-family: 'Roboto', sans-serif;
   }
 
   .main-text {
-    color: #FFFFFF;
-    font-family: 'Poppins';
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
     font-size: 1em;
     margin-top: 2%;
   }
@@ -98,7 +98,7 @@
   img:hover {
     background: transparent;
     transition: 0.3s ease-in-out;
-    box-shadow: 0 0 1em #FF6B00;
+    box-shadow: 0 0 1em #ff6b00;
     border-radius: 0.4em;
   }
 }
