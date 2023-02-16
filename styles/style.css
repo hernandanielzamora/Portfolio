@@ -55,7 +55,6 @@ main {
   background-position-x: right;
   background-position-y: 14em;
   position: absolute;
-  width: 100%;
 }
 
 .main-container {
@@ -127,10 +126,12 @@ main {
 
 /* Work Cards */
 .work-card {
-  grid-column-start: 2;
-  grid-column-end: 3;
+  grid-column: 2;
   width: 100%;
   margin-top: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .card-title {
@@ -289,9 +290,6 @@ li {
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: 17em;
-}
-
-.aboutme-section-header {
   display: flex;
   flex-direction: column;
   justify-content: center;
