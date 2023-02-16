@@ -2,18 +2,8 @@
 * {
   margin: 0;
   padding: 0;
-}
-
-/* MEDIA QUERY MOBILE VERSION */
-
-/* Body */
-body {
-  background-color: #1c1a19;
-  background-image: url(../media/Illustration.png);
-  background-repeat: no-repeat;
-  background-position-x: right;
-  background-position-y: 18em;
-  position: absolute;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 /* NavBar */
@@ -58,10 +48,21 @@ body {
 }
 
 /* Main Section */
+main {
+  background-color: #1c1a19;
+  background-image: url(../media/Illustration.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: 14em;
+  position: absolute;
+  width: 100%;
+}
+
 .main-container {
   display: flex;
   flex-direction: column;
-  margin: 30% 5% 0 5%;
+  padding-top: 30%;
+  margin: 0% 5% 25% 5%;
   width: 85%;
 }
 
@@ -94,13 +95,294 @@ body {
   width: 45%;
 }
 
-img:hover {
+.media-img:hover {
   background: transparent;
   transition: 0.3s ease-in-out;
   box-shadow: 0 0 1em #ff6b00;
   border-radius: 0.4em;
 }
 
-.main-media li {
+/* My Works Section (Grid) */
+.work-section {
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 5% 90% 5%;
+}
+
+.work-title {
+  grid-column: 2;
+  color: #1c1a19;
+  font-family: 'Crete Round', sans-serif;
+  font-size: 2.5em;
+  font-weight: 100;
+  margin: 20% 4% 10% 2%;
+}
+
+.work-bar {
+  grid-column: 2;
+  background-color: #212121;
+  width: 100%;
+  height: 1px;
+}
+
+/* Work Cards */
+.work-card {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  width: 100%;
+  margin-top: 20%;
+}
+
+.card-title {
+  font-family: 'Crete Round', sans-serif;
+  font-size: 1.5em;
+  font-weight: 150;
+  margin: 4% 0;
+}
+
+.card-text {
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 3%;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* Buttons */
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 2%;
+}
+
+li {
   list-style: none;
+}
+
+.feature-btn {
+  width: 49px;
+  height: 40px;
+  background-color: #fff;
+  border: 1px solid #8993a4;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.ruby {
+  margin-right: 20%;
+}
+
+.project-btn {
+  width: 35%;
+  height: 48px;
+  background-color: #ff6b00;
+  color: #fff;
+  border: 1px solid #8993a4;
+  text-align: center;
+  font-family: 'inter', sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+}
+
+.project-btn:hover {
+  background-color: #fff5e1;
+  color: #f55800;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 0 1em #ff6b00;
+}
+
+/* Project Cards */
+.card-container {
+  width: 100%;
+  margin: 10% 0;
+  grid-column: 2;
+  background-image: url(../media/project-img.png);
+  background-size: 100%;
+  height: 340px;
+  background-repeat: no-repeat;
+}
+
+.card-content {
+  margin-top: 30%;
+}
+
+.project-title {
+  font-family: 'Crete Round', sans-serif;
+  font-weight: 400;
+  font-size: 2em;
+  color: #fff;
+  margin-left: 4%;
+}
+
+.project-text {
+  margin-left: 4%;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  color: #fff;
+  font-size: 16px;
+}
+
+.project-btn-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  margin-top: 2%;
+}
+
+.project-feature-btn {
+  width: 49px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.24);
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  font-weight: 500;
+  font-size: 15px;
+  color: #fff;
+  margin-top: 4%;
+}
+
+.html-list {
+  margin-left: 4%;
+}
+
+.boostrap {
+  width: 95px;
+  height: 40px;
+}
+
+.project-ruby {
+  margin-right: 25%;
+}
+
+.project-final-btn {
+  width: 100%;
+  height: 48px;
+  background-color: #ff6b00;
+  color: #fff;
+  border: 1px solid #8993a4;
+  text-align: center;
+  font-family: 'inter', sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+  margin-top: 5%;
+}
+
+.project-final-btn:hover {
+  background-color: #fff5e1;
+  color: #f55800;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 0 1em #ff6b00;
+}
+
+.last-card {
+  margin-bottom: 70%;
+}
+
+/* About Me Section */
+.aboutme-section {
+  margin-top: 40%;
+  background-image: url(../media/aboutme-background.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: 17em;
+}
+
+.aboutme-section-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.aboutme-title {
+  color: #ff6b00;
+  font-family: 'Crete Round', sans-serif;
+  font-size: 4.5em;
+  font-weight: 400;
+  margin: 5% 5%;
+}
+
+.aboutme-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  color: #f4f5f7;
+  font-size: 16px;
+  margin: 0 5% 5% 5%;
+}
+
+.aboutme-button {
+  margin: 2% 0% 60% 5%;
+  width: 10em;
+  height: 48px;
+  background-color: #ff6b00;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  border: none;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1em;
+}
+
+.aboutme-button:hover {
+  background-color: #fff5e1;
+  color: #f55800;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 0 1em #ff6b00;
+}
+
+.aboutme-bar {
+  background-color: #fff;
+  width: 80%;
+  height: 1px;
+  margin-bottom: 30%;
+  margin-left: 10%;
+}
+
+/* Aboutme - Skills */
+.aboutme-skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 10% 0%;
+}
+
+.languaje {
+  background-image: url(../media/lenguaje-rectangle.png);
+  background-repeat: no-repeat;
+  background-position-x: 95px;
+}
+
+.frameworks {
+  background-image: url(../media/framework-square.png);
+  background-repeat: no-repeat;
+  background-position-x: 85px;
+  background-position-y: 3.5px;
+}
+
+.skills {
+  background-image: url(../media/skills-circle.png);
+  background-repeat: no-repeat;
+  background-position-x: 120px;
+  background-position-y: 4px;
+}
+
+.aboutme-subtitle {
+  color: #fff;
+  font-family: 'InaiMathi', sans-serif;
+  font-weight: 700;
+  font-size: 1.375em;
+  margin-bottom: 10%;
+}
+
+.aboutme-text-skills {
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 1.3em;
+  margin: 5% 0;
 }
