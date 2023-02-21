@@ -412,7 +412,8 @@ li {
   align-items: center;
 }
 
-input, textarea {
+input,
+textarea {
   width: 80%;
   margin-bottom: 4%;
   border: none;
@@ -425,8 +426,9 @@ input, textarea {
 }
 
 .input-border {
-  border-bottom: 1px solid #dBd8d7;
+  border-bottom: 1px solid #dbd8d7;
 }
+
 .abtme-btn-container {
   display: flex;
   justify-content: center;
@@ -456,6 +458,3 @@ footer {
 .footer-media li {
   margin-right: 2%;
 }
-
-
-
