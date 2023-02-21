@@ -384,3 +384,78 @@ li {
   font-size: 1.3em;
   margin: 5% 0;
 }
+
+/* Contact Me Form */
+#aboutme {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #e5e5e5;
+  height: 100vh;
+  margin-top: 5%;
+}
+
+.abtme-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 2em;
+  width: 10em;
+  text-align: center;
+  margin: 5%;
+  color: #172b4d;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input, textarea {
+  width: 80%;
+  margin-bottom: 4%;
+  border: none;
+  resize: none;
+  background-color: #e5e5e5;
+  padding: 4%;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+}
+
+.input-border {
+  border-bottom: 1px solid #dBd8d7;
+}
+.abtme-btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* Footer */
+.footer-bar {
+  background-color: #aaacb0;
+  width: 100%;
+  height: 2px;
+  margin: 10% 0% 0% 2%;
+}
+
+footer {
+  background-color: #e5e5e5;
+  margin-top: 10%;
+}
+
+.footer-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 1.1em;
+}
+
+.footer-media li {
+  margin-right: 2%;
+}
+
+
+
