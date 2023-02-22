@@ -26,6 +26,12 @@
 				<div class="bar"></div>
 				<div class="bar"></div>
 				<div class="bar"></div>
+				<ul class="nav-list">
+					<li class="nav-item"><a href="">Portfolio</a></li>
+					<li class="nav-item"><a href="">About</a></li>
+					<li class="nav-item"><a href="">Contact</a></li>
+					<li class="nav-item"><a href=""><img src="media/mail-icon.png" alt="Mail Icon" class="mail-icon"></a></li>
+				</ul>
 			</nav>
 		</div>
 	</header>
@@ -34,13 +40,15 @@
 	<main>
 		<!-- Heading - Text -->
 		<section class="main-container">
-			<h1 class="main-title">Hey there. I'm Hernán</h1>
-			<h2 class="main-subtitle">I'am a Software Developer</h2>
-			<p class="main-text">I can help you build a product , feature or website Look through some of my work and
-				experience!
-				If you like what you see and have a project you need coded, don't hestiate to contact me.</p>
+			<div class="text-container">
+				<h1 class="main-title">Hey There. I'm Hernán</h1>
+				<h2 class="main-subtitle">I'am a Software Developer</h2>
+				<p class="main-text">I can help you build a product , feature or website Look through some of my work and
+					experience!
+					If you like what you see and have a project you need coded, don't hestiate to contact me.</p>
+			</div>
 			<!-- Social Media Images -->
-			<div>
+			<div class="media-container">
 				<ul class="main-media">
 					<li><a href="https://github.com/hernandanielzamora" target="_blank" rel="noopener noreferrer"><img
 								src="media/github.png" alt="Github Image" class="media-img"></a></li>
@@ -59,132 +67,196 @@
 
 		<!-- Works Section -->
 		<section class="work-section">
-			<h2 class="work-title">My Recent Works</h2>
-			<div class="work-bar"></div>
+			<div class="work-text-container">
+				<h2 class="work-title">My Recent Works</h2>
+				<div class="work-bar"></div>
+			</div>
 			<!-- Work Card Section -->
 			<div class="work-card">
-				<img src="media/multi-post-stories.png" alt="Multi-Post Stories Image" class="card-image">
-				<h3 class="card-title">Multi-Post Stories</h3>
-				<p class="card-text">A daily selection of privately personalized reads; no accounts or sign-ups required.
-					Has been the industry's standard dummy text ever since the 1500s,
-					when an unknown printer took a standard dummy text.</p>
-				<div>
+				<div class="work-card-img">
+					<img src="media/multi-post-stories.png" alt="Multi-Post Stories Image" class="card-image">
+				</div>
+				<div class="work-card-text">
+					<h3 class="card-title">Multi-Post Stories</h3>
+					<p class="card-text">A daily selection of privately personalized reads; no accounts or sign-ups required.
+						Has been the industry's standard dummy text ever since the 1500s,
+						when an unknown printer took a standard dummy text.</p>
 					<ul class="btn-container">
 						<li><button class="feature-btn" type="button">css</button></li>
 						<li><button class="feature-btn" type="button">html</button></li>
 						<li><button class="feature-btn boostrap" type="button">boostrap</button></li>
 						<li class="ruby"><button class="feature-btn" type="button">Ruby</button></li>
 					</ul>
+					<a href="#" rel="noopener noreferrer"><button class="project-btn" type="button">See Project</button></a>
 				</div>
-				<a href="#" rel="noopener noreferrer"><button class="project-btn" type="button">See Project</button></a>
 			</div>
 
 			<!-- Projects Cards -->
-			<div class="card-container">
-				<div class="card-content">
-					<h3 class="project-title">Profesional Art Printing Data</h3>
-					<p class="project-text">A daily selection of privately personalized reads; no accounts or sign-ups required.
-						has been the industry's standard.</p>
+			<!-- First Cards -->
+			<div class="cards-container">
+				<div class="card-container card-1">
+					<div class="card-content card-1-content">
+						<h3 class="project-title">Profesional Art Printing Data</h3>
+						<p class="project-text">A daily selection of privately personalized reads; no accounts or sign-ups required.
+							has been the industry's standard.</p>
+						<div>
+							<ul class="project-btn-container">
+								<li class="html-list"><button class="project-feature-btn" disabled="disabled"
+										type="button">html</button>
+								</li>
+								<li><button class="project-feature-btn boostrap boostrap-btn" disabled="disabled"
+										type="button">boostrap</button>
+								</li>
+								<li project-ruby><button class="project-feature-btn project-ruby" disabled="disabled"
+										type="button">Ruby</button></li>
+							</ul>
+						</div>
+					</div>
+					<a href="#" rel="noopener noreferrer" class="first-project-btn"><button
+							class="project-final-btn first-project-btn" type="button">See
+							Project</button></a>
+				</div>
+
+				<div class="card-container card-2">
+					<div class="card-content">
+						<div class="card-content-mobile">
+							<h3 class="project-title">Profesional Art Printing Data</h3>
+							<p class="project-text">A daily selection of privately personalized reads; no accounts or sign-ups
+								required.
+								has been the industry's standard.</p>
+						</div>
+						<div class="card-content-desktop">
+							<h3 class="project-title">Data Dashboard Healthcare</h3>
+							<p class="project-text">A daily selection of privately personalized reads; no accounts or sign-ups
+								required. has been the industry's standard</p>
+						</div>
+						<div>
+							<ul class="project-btn-container">
+								<li class="html-list"><button class="project-feature-btn" disabled="disabled"
+										type="button">html</button>
+								</li>
+								<li><button class="project-feature-btn boostrap boostrap-btn" disabled="disabled"
+										type="button">boostrap</button>
+								</li>
+								<li project-ruby><button class="project-feature-btn project-ruby" disabled="disabled"
+										type="button">Ruby</button></li>
+							</ul>
+							<a href="#" rel="noopener noreferrer"><button class="project-final-btn" type="button">See
+									Project</button></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="card-container card-3">
+					<div class="card-content card-3-desktop"">
+						<div class=" card-content-mobile">
+						<h3 class="project-title">Profesional Art Printing Data</h3>
+						<p class="project-text">A daily selection of privately personalized reads; no accounts or sign-ups required.
+							has been the industry's standard.</p>
+					</div>
+					<div class="card-content-desktop">
+						<h3 class="project-title">Website Protfolio </h3>
+						<p class="project-text">A daily selection of privately personalized reads; no accounts or sign-ups required.
+							has been the industry's standard</p>
+					</div>
 					<div>
 						<ul class="project-btn-container">
 							<li class="html-list"><button class="project-feature-btn" disabled="disabled" type="button">html</button>
 							</li>
-							<li><button class="project-feature-btn boostrap" disabled="disabled" type="button">boostrap</button></li>
-							<li class="project-ruby"><button class="project-feature-btn" disabled="disabled"
+							<li><button class="project-feature-btn boostrap boostrap-btn" disabled="disabled"
+									type="button">boostrap</button>
+							</li>
+							<li project-ruby><button class="project-feature-btn project-ruby" disabled="disabled"
 									type="button">Ruby</button></li>
 						</ul>
 					</div>
-					<a href="#" rel="noopener noreferrer"><button class="project-final-btn" type="button">See Project</button></a>
+					<a href="#" rel="noopener noreferrer"><button class="project-final-btn" type="button">See
+							Project</button></a>
 				</div>
+			</div>
 			</div>
 
-			<div class="card-container">
-				<div class="card-content">
-					<h3 class="project-title">Profesional Art Printing Data</h3>
-					<p class="project-text">A daily selection of privately personalized reads; no accounts or sign-ups required.
-						has been the industry's standard.</p>
-					<div>
-						<ul class="project-btn-container">
-							<li class="html-list"><button class="project-feature-btn" disabled="disabled" type="button">html</button>
-							</li>
-							<li><button class="project-feature-btn boostrap" disabled="disabled" type="button">boostrap</button></li>
-							<li class="project-ruby"><button class="project-feature-btn" disabled="disabled"
-									type="button">Ruby</button></li>
-						</ul>
+			<!-- Second Cards -->
+			<div class="cards-container second-cards-container">
+				<div class="card-container second-row-card-1">
+					<div class="card-content">
+						<h3 class="project-title">Profesional Art Printing Data</h3>
+						<p class="project-text">A daily selection of privately personalized reads; no accounts or sign-ups required.
+							has been the industry's standard.</p>
+						<div>
+							<ul class="project-btn-container">
+								<li class="html-list"><button class="project-feature-btn" disabled="disabled"
+										type="button">html</button>
+								</li>
+								<li><button class="project-feature-btn boostrap boostrap-btn" disabled="disabled"
+										type="button">boostrap</button>
+								</li>
+								<li project-ruby><button class="project-feature-btn project-ruby" disabled="disabled"
+										type="button">Ruby</button></li>
+							</ul>
+						</div>
+						<a href="#" rel="noopener noreferrer"><button class="project-final-btn" type="button">See
+								Project</button></a>
 					</div>
-					<a href="#" rel="noopener noreferrer"><button class="project-final-btn" type="button">See Project</button></a>
 				</div>
-			</div>
 
-			<div class="card-container">
-				<div class="card-content">
-					<h3 class="project-title">Profesional Art Printing Data</h3>
-					<p class="project-text">A daily selection of privately personalized reads; no accounts or sign-ups required.
-						has been the industry's standard.</p>
-					<div>
-						<ul class="project-btn-container">
-							<li class="html-list"><button class="project-feature-btn" disabled="disabled" type="button">html</button>
-							</li>
-							<li><button class="project-feature-btn boostrap" disabled="disabled" type="button">boostrap</button></li>
-							<li class="project-ruby"><button class="project-feature-btn" disabled="disabled"
-									type="button">Ruby</button></li>
-						</ul>
+				<div class="card-container card-2">
+					<div class="card-content">
+						<div class="card-content-mobile">
+							<h3 class="project-title">Profesional Art Printing Data</h3>
+							<p class="project-text">A daily selection of privately personalized reads; no accounts or sign-ups
+								required.
+								has been the industry's standard.</p>
+						</div>
+						<div class="card-content-desktop">
+							<h3 class="project-title">Data Dashboard Healthcare</h3>
+							<p class="project-text">A daily selection of privately personalized reads; no accounts or sign-ups
+								required. has been the industry's standard</p>
+						</div>
+						<div>
+							<ul class="project-btn-container">
+								<li class="html-list"><button class="project-feature-btn" disabled="disabled"
+										type="button">html</button>
+								</li>
+								<li><button class="project-feature-btn boostrap boostrap-btn" disabled="disabled"
+										type="button">boostrap</button>
+								</li>
+								<li project-ruby><button class="project-feature-btn project-ruby" disabled="disabled"
+										type="button">Ruby</button></li>
+							</ul>
+							<a href="#" rel="noopener noreferrer"><button class="project-final-btn" type="button">See
+									Project</button></a>
+						</div>
 					</div>
-					<a href="#" rel="noopener noreferrer"><button class="project-final-btn" type="button">See Project</button></a>
 				</div>
-			</div>
-			<div class="card-container">
-				<div class="card-content">
-					<h3 class="project-title">Profesional Art Printing Data</h3>
-					<p class="project-text">A daily selection of privately personalized reads; no accounts or sign-ups required.
-						has been the industry's standard.</p>
-					<div>
-						<ul class="project-btn-container">
-							<li class="html-list"><button class="project-feature-btn" disabled="disabled" type="button">html</button>
-							</li>
-							<li><button class="project-feature-btn boostrap" disabled="disabled" type="button">boostrap</button></li>
-							<li class="project-ruby"><button class="project-feature-btn" disabled="disabled"
-									type="button">Ruby</button></li>
-						</ul>
-					</div>
-					<a href="#" rel="noopener noreferrer"><button class="project-final-btn" type="button">See Project</button></a>
-				</div>
-			</div>
 
-			<div class="card-container">
-				<div class="card-content">
-					<h3 class="project-title">Profesional Art Printing Data</h3>
-					<p class="project-text">A daily selection of privately personalized reads; no accounts or sign-ups required.
-						has been the industry's standard.</p>
+				<div class="card-container card-3 last-card">
+					<div class="card-content card-3-desktop"">
+						<div class=" card-content-mobile">
+						<h3 class="project-title">Profesional Art Printing Data</h3>
+						<p class="project-text">A daily selection of privately personalized reads; no accounts or sign-ups required.
+							has been the industry's standard.</p>
+					</div>
+					<div class="card-content-desktop">
+						<h3 class="project-title">Website Protfolio </h3>
+						<p class="project-text">A daily selection of privately personalized reads; no accounts or sign-ups required.
+							has been the industry's standard</p>
+					</div>
 					<div>
 						<ul class="project-btn-container">
 							<li class="html-list"><button class="project-feature-btn" disabled="disabled" type="button">html</button>
 							</li>
-							<li><button class="project-feature-btn boostrap" disabled="disabled" type="button">boostrap</button></li>
-							<li class="project-ruby"><button class="project-feature-btn" disabled="disabled"
+							<li><button class="project-feature-btn boostrap boostrap-btn" disabled="disabled"
+									type="button">boostrap</button>
+							</li>
+							<li project-ruby><button class="project-feature-btn project-ruby" disabled="disabled"
 									type="button">Ruby</button></li>
 						</ul>
 					</div>
-					<a href="#" rel="noopener noreferrer"><button class="project-final-btn" type="button">See Project</button></a>
+					<a href="#" rel="noopener noreferrer"><button class="project-final-btn" type="button">See
+							Project</button></a>
 				</div>
 			</div>
-
-			<div class="card-container last-card">
-				<div class="card-content ">
-					<h3 class="project-title">Profesional Art Printing Data</h3>
-					<p class="project-text">A daily selection of privately personalized reads; no accounts or sign-ups required.
-						has been the industry's standard.</p>
-					<div>
-						<ul class="project-btn-container">
-							<li class="html-list"><button class="project-feature-btn" disabled="disabled" type="button">html</button>
-							</li>
-							<li><button class="project-feature-btn boostrap" disabled="disabled" type="button">boostrap</button></li>
-							<li class="project-ruby"><button class="project-feature-btn" disabled="disabled"
-									type="button">Ruby</button></li>
-						</ul>
-					</div>
-					<a href="#" rel="noopener noreferrer"><button class="project-final-btn" type="button">See Project</button></a>
-				</div>
 			</div>
 		</section>
 
@@ -195,7 +267,7 @@
 				<p class="aboutme-text">Hello I'm a software developer! I can help you build a product , feature or website Look
 					through some of my work and experience! If you like what you see and have a project you need coded, don't
 					hestiate to contact me.</p>
-				<div>
+				<div class="aboutme-link">
 					<a href="#" target="_blank" rel="noopener noreferrer"><button class="aboutme-button" type="button">Get My
 							Resume</button></a>
 				</div>
@@ -203,8 +275,8 @@
 			<div class="aboutme-bar"></div>
 			<!-- Aboutme Skills -->
 			<div>
-				<ul>
-					<li>
+				<ul class="skills-container">
+					<li class="list-container">
 						<ul class="aboutme-skills  languaje">
 							<li class="aboutme-subtitle">
 								<h4>Language</h4>
@@ -215,7 +287,7 @@
 							<li class="aboutme-text-skills">Css</li>
 						</ul>
 					</li>
-					<li>
+					<li class="list-container">
 						<ul class="aboutme-skills frameworks">
 							<li class="aboutme-subtitle">
 								<h4>Frameworks</h4>
@@ -228,9 +300,9 @@
 						</ul>
 
 					</li>
-					<li>
+					<li class="list-container">
 						<ul class="aboutme-skills skills">
-							<li class="aboutme-subtitle">
+							<li class="aboutme-subtitle skills-subtitle">
 								<h4>Skills</h4>
 							</li>
 							<li class="aboutme-text-skills">Codekit</li>
@@ -246,34 +318,34 @@
 
 		<!-- Contact Me Form -->
 		<section class="contact-me-container">
+			<h2 class="abtme-title">I'm always interested in hearing about new projects, so if you'd like to chat please get
+				in
+				touch</h2>
 			<form action="https://formspree.io/f/xdovglwp" method="POST">
-				<h2 class="abtme-title">I'm always interested in hearing about new projects, so if you'd like to chat please get
-					in
-					touch</h2>
 				<div class="input-container">
 					<input class="input-border" type="text" placeholder="Full name" maxlength="30" required>
 					<input class="input-border" type="email" placeholder="Email address" required>
-					<textarea name="textarea" id="textarea" cols="30" rows="5" placeholder="Enter text here"
-						maxlength="500" required></textarea>
+					<textarea name="textarea" id="textarea" cols="30" rows="5"
+						placeholder="Hello Hernán. I would like to get in touch with you..." maxlength="500" required></textarea>
 				</div>
 				<div class="abtme-btn-container">
 					<button type="submit" class="project-btn getintouch-btn">Get in touch</button>
 				</div>
 			</form>
-			<div class="bar-container">
-				<div class="footer-bar"></div>
-
-			</div>
+			
 
 
 			<footer>
+				<div class="bar-container">
+					<div class="footer-bar"></div>
+				</div>
 				<ul class="footer-media">
 					<li><a href="https://github.com/hernandanielzamora" target="_blank" rel="noopener noreferrer"
 							class="icon-ancor"><i class="fa-brands fa-github fa-lg"></i></a></li>
 					<li> <a href="https://www.linkedin.com/in/hernan-zamora-03a697236/" target="_blank" rel="noopener noreferrer"
 							class="icon-ancor"><i class="fa-brands fa-linkedin-in fa-lg"></i></a></li>
-					<li> <a href="#" target="_blank" rel="noopener noreferrer" class="icon-ancor"><i class="fa-brands fa-angellist fa-lg"
-								class="icon-ancor"></i></a></li>
+					<li> <a href="#" target="_blank" rel="noopener noreferrer" class="icon-ancor"><i
+								class="fa-brands fa-angellist fa-lg" class="icon-ancor"></i></a></li>
 					<li> <a href="https://twitter.com/HernanZamora14" target="_blank" rel="noopener noreferrer"
 							class="icon-ancor"><i class="fa-brands fa-twitter fa-lg"></i></a></li>
 					<li> <a href="#" target="_blank" rel="noopener noreferrer" class="icon-ancor"><i
@@ -282,6 +354,7 @@
 				</ul>
 			</footer>
 		</section>
+
 	</main>
 
 </body>
