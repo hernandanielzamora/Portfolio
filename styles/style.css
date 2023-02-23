@@ -27,11 +27,9 @@
 }
 
 .nav-bar a:hover {
-  color: #ff6b00;
-  transform: scale(1.2);
+  transform: scale(1.2) rotate(360deg);
   color: #f55800;
   transition: 0.2s;
-  transform: rotate(360deg);
 }
 
 .menu {
