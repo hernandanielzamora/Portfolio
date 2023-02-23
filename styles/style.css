@@ -1078,9 +1078,9 @@ footer {
     margin-top: 10%;
     background-image: url(../media/aboutme-big-background.png);
     background-repeat: no-repeat;
-    background-size: 60%;
+    background-size: 50%;
     background-position-x: 35em;
-    background-position-y: 6.5em;
+    background-position-y: 10em;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -1815,9 +1815,9 @@ footer {
     margin-top: 10%;
     background-image: url(../media/aboutme-big-background.png);
     background-repeat: no-repeat;
-    background-size: 50%;
+    background-size: 40%;
     background-position-x: right;
-    background-position-y: top;
+    background-position-y: 5em;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
