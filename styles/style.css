@@ -503,11 +503,10 @@ footer {
 }
 
 /* Desktop Version */
-
 /* QUERY  768 -> 1024 */
-
 /* 768 changes */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) {
+
   /* NavBar */
   .menu {
     width: 35%;
@@ -607,13 +606,21 @@ footer {
     align-items: center;
   }
 
+  .work-bar {
+    margin-left: 0%;
+    width: 55em;
+    color: #212121;
+  }
+
   .work-title {
     margin-top: 10%;
     font-size: 2.5em;
     font-family: 'Crete Round', sans-serif;
     font-weight: 400;
     width: 95%;
-    margin-left: 2%;
+    margin-left: 5%;
+    margin-right: 0%;
+    color: #091e42;
   }
 
   .work-card {
@@ -859,9 +866,9 @@ footer {
 }
 
 /* QUERY  1024 -> 1440 */
-
 /* 1024 changes */
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
+@media only screen and (min-width: 1024px) {
+
   /* Main Section */
   .main-title {
     font-family: 'Crete Round', sans-serif;
@@ -905,13 +912,21 @@ footer {
     align-items: center;
   }
 
+  .work-bar {
+    margin-left: 0%;
+    width: 120em;
+    color: #212121;
+  }
+
   .work-title {
     margin-top: 10%;
     font-size: 2.5em;
     font-family: 'Crete Round', sans-serif;
     font-weight: 400;
-    width: 77%;
-    margin-left: 3%;
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 0%;
+    color: #091e42;
   }
 
   .work-card {
@@ -1178,9 +1193,9 @@ footer {
 }
 
 /* QUERY 1440 -> 2560 */
-
 /* 1440 changes */
-@media screen and (min-width: 1440px) and (max-width: 2560px) {
+@media only screen and (min-width: 1440px) {
+
   /* NavBar */
   .menu {
     width: 35%;
@@ -1284,14 +1299,22 @@ footer {
     justify-content: space-evenly;
     align-items: center;
   }
+  
+  .work-bar {
+    margin-left: 0%;
+    width: 220em;
+    color: #212121;
+  }
 
   .work-title {
     margin-top: 10%;
     font-size: 2.5em;
     font-family: 'Crete Round', sans-serif;
     font-weight: 400;
-    width: 77%;
+    width: 95%;
     margin-left: 10%;
+    margin-right: 0%;
+    color: #091e42;
   }
 
   .work-card {
@@ -1565,10 +1588,14 @@ footer {
 }
 
 /* QUERY 2560 */
-
 /* 2560 changes */
-@media screen and (min-width: 2560px) {
+@media only screen and (min-width: 2560px) {
+
   /* Main Section */
+  main {
+    background-size: 40%;
+  }
+
   .main-container {
     display: grid;
     grid-template-columns: 5% 30%;
@@ -1622,15 +1649,22 @@ footer {
     align-items: center;
   }
 
+  .work-bar {
+    margin-left: 0%;
+    color: #212121;
+    width: 880em;
+  }
+
   .work-title {
     margin-top: 10%;
     font-size: 2.5em;
     font-family: 'Crete Round', sans-serif;
     font-weight: 400;
-    width: 77%;
-    margin-left: 9.5%;
+    width: 95%;
+    margin-left: 10%;
+    margin-right: 0%;
+    color: #091e42;
   }
-
   .work-card {
     display: grid;
     grid-template-columns: 5% 40% 40% 5%;
