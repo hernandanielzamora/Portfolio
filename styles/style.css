@@ -1078,8 +1078,8 @@ footer {
     margin-top: 10%;
     background-image: url(../media/aboutme-big-background.png);
     background-repeat: no-repeat;
-    background-size: 50%;
-    background-position-x: 35em;
+    background-size: 45%;
+    background-position-x: right;
     background-position-y: 10em;
     display: flex;
     flex-direction: column;
