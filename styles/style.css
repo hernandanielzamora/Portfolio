@@ -28,6 +28,10 @@
 
 .nav-bar a:hover {
   color: #ff6b00;
+  transform: scale(1.2);
+  color: #f55800;
+  transition: 0.2s;
+  transform: rotate(360deg);
 }
 
 .menu {
@@ -49,6 +53,12 @@
 
 .nav-list {
   display: none;
+}
+
+.nav-item:hover {
+  transform: scale(1.2);
+  color: #f55800;
+  transition: 0.2s;
 }
 
 /* Main Section */
