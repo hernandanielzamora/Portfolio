@@ -135,6 +135,7 @@ Install this project linters:
 
 - [Live Demo Link](https://hernandanielzamora.github.io/Portfolio/)
 - [Secondary Demo Link](https://projecttrial.netlify.app/)
+- [Walkthrough Project Outline](https://www.loom.com/share/1df0ff187f3c44ab84b3fc05fc41ab34)
 
 <!-- CONTRIBUTING -->
 
