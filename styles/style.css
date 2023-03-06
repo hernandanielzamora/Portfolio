@@ -27,7 +27,7 @@
 }
 
 .nav-bar a:hover {
-  transform: scale(1.2) rotate(360deg);
+  transform: scale(1.2);
   color: #f55800;
   transition: 0.2s;
 }
@@ -41,12 +41,38 @@
   margin-right: 8.5%;
 }
 
+.menu-btn {
+  background-color: transparent;
+}
+
+.ham-menu {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
 .bar {
   width: 55%;
-  height: 8%;
+  height: 6%;
   margin: 6%;
   border-radius: 10%;
   background-color: #fff;
+  transition: 0.5s;
+}
+
+.ham-menu.active .bar1 {
+  transform: translateY(0px) rotate(45deg);
+}
+
+.ham-menu.active .bar2 {
+  opacity: 0;
+}
+
+.ham-menu.active .bar3 {
+  transform: translateY(-12px) rotate(-45deg);
 }
 
 .nav-list {
@@ -57,6 +83,61 @@
   transform: scale(1.2);
   color: #f55800;
   transition: 0.2s;
+}
+
+/* Offcanvas Menu */
+.nav-sidebar {
+  display: none;
+}
+
+.nav-sidebar.active {
+  display: block;
+  margin-bottom: -5%;
+  z-index: 1;
+  height: calc(100vh);
+  background-color: #3c3a39;
+}
+
+.offcanvas-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #3c3a39;
+  
+}
+
+.offcanvas-item {
+  margin-left: 5%;
+  width: 90%;
+
+}
+
+.offcanvas-item a {
+  list-style-type: none;
+  text-decoration: none;
+  color: #fff5e1;
+  width: 14em;
+  height: 1.5em;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #fff5e1;
+}
+
+.aside-bar {
+  width: 90%;
+  height: 0.1em;
+  margin: 2% 0%;
+  border-radius: 10%;
+  background-color: #6F6C6B;
+}
+
+.logo.active {
+  visibility: hidden;
+}
+
+.invisible {
+  display: none;
 }
 
 /* Main Section */
@@ -296,7 +377,6 @@ li {
   font-family: 'inter', sans-serif;
   font-weight: 700;
   font-size: 1em;
-  margin-top: 5%;
 }
 
 .project-final-btn:hover {
@@ -511,11 +591,10 @@ footer {
 }
 
 /* Desktop Version */
-
 /* QUERY  768 -> 1024 */
-
 /* 768 changes */
 @media only screen and (min-width: 768px) {
+
   /* NavBar */
   .menu {
     width: 35%;
@@ -874,9 +953,9 @@ footer {
 }
 
 /* QUERY  1024 -> 1440 */
-
 /* 1024 changes */
 @media only screen and (min-width: 1024px) {
+
   /* Main Section */
   .main-title {
     font-family: 'Crete Round', sans-serif;
@@ -1200,9 +1279,9 @@ footer {
 }
 
 /* QUERY 1440 -> 2560 */
-
 /* 1440 changes */
 @media only screen and (min-width: 1440px) {
+
   /* NavBar */
   .menu {
     width: 35%;
@@ -1590,9 +1669,9 @@ footer {
 }
 
 /* QUERY 2560 */
-
 /* 2560 changes */
 @media only screen and (min-width: 2560px) {
+
   /* Main Section */
   main {
     background-size: 40%;
