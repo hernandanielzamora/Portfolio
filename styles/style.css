@@ -21,7 +21,7 @@
   text-decoration: none;
   text-align: center;
   font-size: 1em;
-  margin-left: 8.5%;
+  margin-left: 8.6%;
   color: #fff;
   font-family: 'Roboto', sans-serif;
 }
@@ -50,7 +50,7 @@
   justify-content: center;
   width: 10%;
   height: 55%;
-  margin-right: 8.5%;
+  margin-right: 8.6%;
 }
 
 .menu-btn {
@@ -259,7 +259,7 @@ li {
 
 .feature-btn {
   width: 49px;
-  height: 40px;
+  height: 41px;
   background-color: #fff;
   border: 1px solid #8993a4;
   font-family: 'Inter', sans-serif;
