@@ -1,4 +1,3 @@
-/* eslint linebreak-style: ["error", "windows"] */
 const getMenuBtn = document.getElementById('ham-menu');
 const getNavBar = document.querySelector('.nav-sidebar');
 const getNavLogg = document.querySelector('.logo');
