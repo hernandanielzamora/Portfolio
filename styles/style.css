@@ -1,0 +1,1895 @@
+/* Normalize */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* NavBar */
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #3c3a39;
+  height: 60px;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  text-align: center;
+  font-size: 1em;
+  margin-left: 8.5%;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+
+.nav-bar a:hover {
+  transform: scale(1.2) rotate(360deg);
+  color: #f55800;
+  transition: 0.2s;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 10%;
+  height: 55%;
+  margin-right: 8.5%;
+}
+
+.bar {
+  width: 55%;
+  height: 8%;
+  margin: 6%;
+  border-radius: 10%;
+  background-color: #fff;
+}
+
+.nav-list {
+  display: none;
+}
+
+.nav-item:hover {
+  transform: scale(1.2);
+  color: #f55800;
+  transition: 0.2s;
+}
+
+/* Main Section */
+main {
+  background-color: #1c1a19;
+  background-image: url(../media/Illustration.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: 14em;
+  background-position: absolute;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30%;
+  margin: 0% 5% 25% 5%;
+  width: 85%;
+}
+
+.main-title {
+  color: #ff6b00;
+  font-family: 'Crete Round', sans-serif;
+  font-size: 3.5em;
+  font-weight: 100;
+  margin-bottom: 1.5%;
+}
+
+.main-subtitle {
+  color: #fff5e1;
+  font-family: 'Roboto', sans-serif;
+}
+
+.main-text {
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1em;
+  margin-top: 2%;
+}
+
+/* Main Section: Media Images */
+.main-media {
+  display: flex;
+  justify-content: space-around;
+  height: 1.1em;
+  margin: 3% 8% 15% 8%;
+  width: 45%;
+}
+
+.media-img:hover {
+  background: transparent;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 0 1em #ff6b00;
+  border-radius: 0.4em;
+}
+
+/* My Works Section (Grid) */
+.work-section {
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 5% 90% 5%;
+}
+
+.work-text-container {
+  grid-column: 2;
+}
+
+.work-title {
+  grid-column: 2;
+  color: #1c1a19;
+  font-family: 'Crete Round', sans-serif;
+  font-size: 2.5em;
+  font-weight: 100;
+  margin: 20% 4% 10% 2%;
+}
+
+.work-bar {
+  grid-column: 2;
+  background-color: #212121;
+  width: 100%;
+  height: 1px;
+}
+
+/* Work Cards */
+.work-card {
+  grid-column: 2;
+  width: 100%;
+  margin-top: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.card-title {
+  font-family: 'Crete Round', sans-serif;
+  font-size: 1.5em;
+  font-weight: 150;
+  margin: 4% 0;
+}
+
+.card-text {
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 3%;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* Buttons */
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 2%;
+}
+
+li {
+  list-style: none;
+}
+
+.feature-btn {
+  width: 49px;
+  height: 40px;
+  background-color: #fff;
+  border: 1px solid #8993a4;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.ruby {
+  margin-right: 20%;
+}
+
+.project-btn {
+  width: 35%;
+  height: 48px;
+  background-color: #ff6b00;
+  color: #fff;
+  border: 1px solid #8993a4;
+  text-align: center;
+  font-family: 'inter', sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+  margin-bottom: 5%;
+}
+
+.project-btn:hover {
+  background-color: #fff5e1;
+  color: #f55800;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 0 1em #ff6b00;
+}
+
+/* Project Cards */
+.cards-container {
+  grid-column: 2;
+}
+
+.card-container {
+  width: 100%;
+  margin: 10% 0;
+  grid-column: 2;
+  background-image: url(../media/project-img.png);
+  background-size: 100%;
+  height: 340px;
+  background-repeat: no-repeat;
+}
+
+.card-content {
+  margin-top: 30%;
+  padding-top: 13%;
+}
+
+.card-1-content {
+  padding-top: 13%;
+}
+
+.project-title {
+  font-family: 'Crete Round', sans-serif;
+  font-weight: 400;
+  font-size: 2em;
+  color: #fff;
+  margin-left: 4%;
+  margin-top: 20%;
+}
+
+.project-text {
+  margin-left: 4%;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  color: #fff;
+  font-size: 16px;
+}
+
+.project-btn-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  margin-top: 2%;
+  width: 80%;
+}
+
+.project-feature-btn {
+  width: 49px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.24);
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  font-weight: 500;
+  font-size: 15px;
+  color: #fff;
+}
+
+.html-list {
+  margin-left: 4%;
+}
+
+.boostrap {
+  width: 95px;
+  height: 40px;
+}
+
+.project-ruby {
+  margin-right: 25%;
+}
+
+.project-final-btn {
+  width: 100%;
+  height: 48px;
+  background-color: #ff6b00;
+  color: #fff;
+  border: 1px solid #8993a4;
+  text-align: center;
+  font-family: 'inter', sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+  margin-top: 5%;
+}
+
+.project-final-btn:hover {
+  background-color: #fff5e1;
+  color: #f55800;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 0 1em #ff6b00;
+}
+
+.last-card {
+  margin-bottom: 70%;
+}
+
+.card-content-desktop {
+  display: none;
+}
+
+/* About Me Section */
+.aboutme-section {
+  margin-top: 40%;
+  background-image: url(../media/aboutme-background.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: 17em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.aboutme-title {
+  color: #ff6b00;
+  font-family: 'Crete Round', sans-serif;
+  font-size: 4.5em;
+  font-weight: 400;
+  margin: 5% 5%;
+}
+
+.aboutme-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  color: #f4f5f7;
+  font-size: 16px;
+  margin: 0 5% 5% 5%;
+}
+
+.aboutme-button {
+  margin: 2% 0% 60% 5%;
+  width: 10em;
+  height: 48px;
+  background-color: #ff6b00;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  border: none;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1em;
+}
+
+.aboutme-button:hover {
+  background-color: #fff5e1;
+  color: #f55800;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 0 1em #ff6b00;
+}
+
+.aboutme-bar {
+  background-color: #fff;
+  width: 80%;
+  height: 1px;
+  margin-bottom: 30%;
+  margin-left: 10%;
+}
+
+/* Aboutme - Skills */
+.aboutme-skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 10% 0%;
+}
+
+.languaje {
+  background-image: url(../media/lenguaje-rectangle.png);
+  background-repeat: no-repeat;
+  background-position-x: 95px;
+}
+
+.frameworks {
+  background-image: url(../media/framework-square.png);
+  background-repeat: no-repeat;
+  background-position-x: 85px;
+  background-position-y: 3.5px;
+}
+
+.skills {
+  background-image: url(../media/skills-circle.png);
+  background-repeat: no-repeat;
+  background-position-x: 120px;
+  background-position-y: 4px;
+}
+
+.aboutme-subtitle {
+  color: #fff;
+  font-family: 'InaiMathi', sans-serif;
+  font-weight: 700;
+  font-size: 1.375em;
+  margin-bottom: 10%;
+}
+
+.aboutme-text-skills {
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 1.3em;
+  margin: 5% 0;
+}
+
+/* Contact Me Form */
+.contact-me-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+  margin-top: 10%;
+  padding-top: 20%;
+}
+
+.abtme-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 1.92em;
+  text-align: center;
+  margin: 8%;
+  color: #172b4d;
+  align-self: center;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input,
+textarea {
+  width: 80%;
+  margin-bottom: 4%;
+  border: none;
+  resize: none;
+  background-color: #fff;
+  padding: 4%;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+}
+
+textarea {
+  background-color: #fbf8f7;
+  resize: both;
+}
+
+.input-border {
+  border-bottom: 1px solid #dbd8d7;
+}
+
+.abtme-btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  margin-bottom: 40%;
+}
+
+.getintouch-btn {
+  border: none;
+}
+
+/* Footer */
+.bar-container {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-bar {
+  background-color: #dfe1e6;
+  width: 100%;
+  height: 2px;
+  margin-top: 10%;
+}
+
+.icon-ancor {
+  color: #505f79;
+}
+
+footer {
+  background-color: #fff;
+  margin: 10% 0%;
+}
+
+.footer-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 1.1em;
+}
+
+.footer-media li {
+  margin-right: 5%;
+}
+
+/* Desktop Version */
+
+/* QUERY  768 -> 1024 */
+
+/* 768 changes */
+@media only screen and (min-width: 768px) {
+  /* NavBar */
+  .menu {
+    width: 35%;
+  }
+
+  .bar {
+    display: none;
+  }
+
+  .nav-list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+  }
+
+  .nav-item {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 1em;
+    color: #fff;
+  }
+
+  .mail-icon {
+    margin-top: 20%;
+  }
+
+  /* Main Section */
+  main {
+    background-color: #1c1a19;
+    background-image: url(../media/header-background.png);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: top;
+  }
+
+  .main-container {
+    display: grid;
+    grid-template-columns: 5% 50%;
+    padding-top: 12%;
+    margin-left: 1%;
+  }
+
+  .text-container {
+    grid-column: 2;
+    margin-left: 10%;
+  }
+
+  .main-title {
+    font-family: 'Crete Round', sans-serif;
+    font-weight: 400;
+    font-size: 3em;
+  }
+
+  .main-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+    color: #fff;
+    margin-bottom: 3%;
+  }
+
+  .main-text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 0.9em;
+    line-height: 32px;
+  }
+
+  .media-container {
+    grid-row: 1;
+    grid-column: 1;
+    padding-top: 50%;
+    margin-top: 400%;
+  }
+
+  .main-media {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-media li {
+    margin-bottom: 60%;
+  }
+
+  /* Project Section */
+  .work-section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0%;
+  }
+
+  .work-text-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .work-bar {
+    width: -webkit-fill-available;
+    color: #212121;
+  }
+
+  .work-title {
+    margin-top: 10%;
+    font-size: 2.5em;
+    font-family: 'Crete Round', sans-serif;
+    font-weight: 400;
+    width: 700px;
+    margin-left: 4%;
+    color: #091e42;
+    text-align: center;
+  }
+
+  .work-card {
+    display: grid;
+    grid-template-columns: 5% 50% 40% 5%;
+    margin: 0%;
+  }
+
+  .work-card-img {
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .work-card-img img {
+    width: 25em;
+  }
+
+  .work-card-text {
+    grid-column: 3;
+    margin-left: 6%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .btn-container li {
+    margin-right: 1%;
+  }
+
+  /* Projects Section */
+  .cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 2% 2%;
+  }
+
+  .card-container {
+    height: 300px;
+    width: 15em;
+    margin-bottom: 0%;
+  }
+
+  .card-1 {
+    grid-column: 1;
+    background-image: url(../media/first-project-image.png);
+  }
+
+  .card-1-content {
+    display: none;
+  }
+
+  .second-row-card-1 {
+    grid-column: 1;
+  }
+
+  .card-2 {
+    grid-column: 2;
+    background-image: url(../media/second-project-image.png);
+  }
+
+  .card-content-mobile {
+    display: none;
+  }
+
+  .card-content-desktop {
+    display: inline;
+  }
+
+  .card-3 {
+    grid-column: 3;
+    background-image: url(../media/third-project-image.png);
+  }
+
+  .card-3-desktop {
+    padding-top: 26%;
+  }
+
+  .card-content {
+    margin-top: 10%;
+  }
+
+  .project-title {
+    font-size: 1.5em;
+    font-family: 'Crete Round', sans-serif;
+    font-weight: 400;
+    line-height: 1.3em;
+    margin-bottom: 3%;
+  }
+
+  .project-text {
+    font-size: 0.9em;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 0.75em;
+    margin-bottom: 4%;
+  }
+
+  .project-btn-container {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    height: 3em;
+  }
+
+  .project-btn-container li {
+    margin-right: 2%;
+  }
+
+  .boostrap-btn {
+    margin-top: 0%;
+  }
+
+  .project-ruby {
+    margin-top: 0%;
+  }
+
+  .project-final-btn {
+    display: none;
+  }
+
+  .first-project-btn {
+    display: inherit;
+    text-decoration: none;
+    margin-top: 97.8%;
+  }
+
+  /* About Me Section */
+  .aboutme-section {
+    margin-top: 10%;
+    background-image: url(../media/aboutme-big-background.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: 12em;
+    background-size: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .aboutme-text {
+    width: 50%;
+    line-height: 2em;
+    margin-bottom: 2%;
+  }
+
+  .aboutme-button {
+    margin-bottom: 20%;
+  }
+
+  .aboutme-bar {
+    background-color: #fff;
+    width: 90%;
+    height: 1px;
+    margin-bottom: 30%;
+    margin-left: 5%;
+  }
+
+  .aboutme-link {
+    height: 20%;
+  }
+
+  /* Aboutme - Skills */
+  .skills-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -15%;
+  }
+
+  .list-container {
+    width: 30%;
+  }
+
+  .languaje {
+    background-image: url(../media/lenguaje-rectangle.png);
+    background-repeat: no-repeat;
+    background-position-x: 50px;
+  }
+
+  .frameworks {
+    background-position-x: 50px;
+  }
+
+  .skills {
+    background-position-x: 50px;
+  }
+
+  .aboutme-subtitle {
+    margin-left: 20%;
+  }
+
+  .skills-subtitle {
+    margin-left: -5%;
+  }
+
+  .aboutme-text-skills {
+    align-self: flex-start;
+    margin-left: 23%;
+    font-size: 1.3em;
+  }
+
+  /* Contact Me Form */
+  .contact-me-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .abtme-title {
+    margin-top: -60%;
+    text-align: left;
+    font-size: 2em;
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    margin-right: 10%;
+  }
+
+  .abtme-btn-container {
+    justify-content: flex-start;
+    margin-left: -5%;
+  }
+
+  /* Footer */
+  footer {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-top: -15%;
+  }
+
+  .footer-bar {
+    background-color: #dfe1e6;
+    width: 100%;
+    height: 2px;
+    margin-top: 2%;
+    margin-bottom: 3%;
+  }
+}
+
+/* QUERY  1024 -> 1440 */
+
+/* 1024 changes */
+@media only screen and (min-width: 1024px) {
+  /* Main Section */
+  .main-title {
+    font-family: 'Crete Round', sans-serif;
+    font-weight: 400;
+    font-size: 4.5em;
+  }
+
+  .main-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 1.5em;
+    color: #fff;
+    margin-bottom: 3%;
+  }
+
+  .main-text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 32px;
+  }
+
+  .media-container {
+    margin-top: 400%;
+  }
+
+  .main-media li {
+    margin-bottom: 100%;
+  }
+
+  /* Project Section */
+  .work-section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0%;
+  }
+
+  .work-text-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .work-bar {
+    width: -webkit-fill-available;
+    color: #212121;
+  }
+
+  .work-title {
+    margin-top: 10%;
+    font-size: 2.5em;
+    font-family: 'Crete Round', sans-serif;
+    font-weight: 400;
+    width: 13em;
+    margin-left: 4%;
+    color: #091e42;
+    text-align: center;
+  }
+
+  .work-card {
+    display: grid;
+    grid-template-columns: 5% 50% 40% 5%;
+    margin: 0%;
+  }
+
+  .work-card-img {
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 20em;
+    margin-top: 42%;
+    margin-bottom: -7%;
+  }
+
+  .work-card-img img {
+    width: 42.75em;
+    height: 28em;
+    margin-bottom: 50%;
+    margin-left: 10%;
+  }
+
+  .work-card-text {
+    grid-column: 3;
+    margin-left: 22%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .card-title {
+    font-size: 2.5em;
+    font-family: 'Crete Round', sans-serif;
+    font-weight: 400;
+  }
+
+  .card-text {
+    font-size: 1.25em;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.75em;
+  }
+
+  /* Projects Section */
+  .cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 0%;
+  }
+
+  .card-container {
+    height: 25em;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 20em;
+  }
+
+  .card-1 {
+    grid-column: 1;
+    background-image: url(../media/first-project-image.png);
+  }
+
+  .card-1-content {
+    display: none;
+  }
+
+  .second-row-card-1 {
+    grid-column: 1;
+  }
+
+  .card-2 {
+    grid-column: 2;
+    background-image: url(../media/second-project-image.png);
+  }
+
+  .card-content-mobile {
+    display: none;
+  }
+
+  .card-content-desktop {
+    display: inline;
+  }
+
+  .card-3 {
+    grid-column: 3;
+    background-image: url(../media/third-project-image.png);
+  }
+
+  .card-3-desktop {
+    padding-top: 24%;
+  }
+
+  .card-content {
+    margin-top: 10%;
+  }
+
+  .project-title {
+    font-size: 2em;
+    font-family: 'Crete Round', sans-serif;
+    font-weight: 400;
+    line-height: 1em;
+    margin-bottom: 3%;
+  }
+
+  .project-text {
+    font-size: 1.0625em;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 1em;
+    margin-bottom: 4%;
+  }
+
+  .project-btn-container {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    height: 3em;
+  }
+
+  .project-btn-container li {
+    margin-right: 2%;
+  }
+
+  .boostrap-btn {
+    margin-top: 0%;
+  }
+
+  .project-ruby {
+    margin-top: 0%;
+  }
+
+  .project-final-btn {
+    display: none;
+  }
+
+  .first-project-btn {
+    display: inherit;
+    text-decoration: none;
+    margin-top: 102.5%;
+  }
+
+  /* About Me Section */
+  .aboutme-section {
+    margin-top: 10%;
+    background-image: url(../media/aboutme-big-background.png);
+    background-repeat: no-repeat;
+    background-size: 45%;
+    background-position-x: right;
+    background-position-y: 10em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .aboutme-text {
+    width: 55%;
+    line-height: 2em;
+    font-size: 1.25em;
+    margin-bottom: 2%;
+  }
+
+  .aboutme-button {
+    margin-bottom: 20%;
+  }
+
+  .aboutme-bar {
+    background-color: #fff;
+    width: 90%;
+    height: 1px;
+    margin-bottom: 25%;
+    margin-left: 5%;
+  }
+
+  .aboutme-link {
+    height: 20%;
+  }
+
+  /* Aboutme - Skills */
+  .skills-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -15%;
+  }
+
+  .list-container {
+    width: 30%;
+  }
+
+  .languaje {
+    background-image: url(../media/lenguaje-rectangle.png);
+    background-repeat: no-repeat;
+    background-position-x: 65px;
+  }
+
+  .frameworks {
+    background-position-x: 70px;
+  }
+
+  .skills {
+    background-position-x: 65px;
+  }
+
+  .aboutme-subtitle {
+    margin-left: 5%;
+  }
+
+  .skills-subtitle {
+    margin-left: -20%;
+  }
+
+  .aboutme-text-skills {
+    align-self: flex-start;
+    margin-left: 23%;
+    font-size: 1.3em;
+  }
+
+  /* Contact Me Form */
+  .contact-me-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .abtme-title {
+    margin-top: -65%;
+    text-align: left;
+    font-size: 2.5em;
+    margin-left: 10%;
+    width: 85%;
+    margin-right: 5%;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    margin-right: 10%;
+    margin-left: 5%;
+  }
+
+  .abtme-btn-container {
+    justify-content: flex-start;
+    margin-left: -2%;
+  }
+
+  /* Footer */
+  footer {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-top: -15%;
+  }
+
+  .footer-bar {
+    background-color: #dfe1e6;
+    width: 100%;
+    height: 2px;
+    margin-top: 2%;
+    margin-bottom: 3%;
+  }
+}
+
+/* QUERY 1440 -> 2560 */
+
+/* 1440 changes */
+@media only screen and (min-width: 1440px) {
+  /* NavBar */
+  .menu {
+    width: 35%;
+  }
+
+  .bar {
+    display: none;
+  }
+
+  .nav-list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+  }
+
+  .nav-item {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 1em;
+    color: #fff;
+  }
+
+  .mail-icon {
+    margin-top: 20%;
+  }
+
+  /* Main Section */
+  main {
+    background-color: #1c1a19;
+    background-image: url(../media/header-background.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: top;
+  }
+
+  .main-container {
+    display: grid;
+    grid-template-columns: 5% 50%;
+    padding-top: 12%;
+    margin-left: 1%;
+  }
+
+  .text-container {
+    grid-column: 2;
+    margin-left: 10%;
+  }
+
+  .main-title {
+    font-family: 'Crete Round', sans-serif;
+    font-weight: 400;
+    font-size: 4.5em;
+    width: 80%;
+  }
+
+  .main-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 2em;
+    color: #fff;
+    margin-bottom: 3%;
+  }
+
+  .main-text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1.25em;
+    line-height: 32px;
+  }
+
+  .media-container {
+    grid-row: 1;
+    grid-column: 1;
+    padding-top: 50%;
+    margin-top: 250%;
+  }
+
+  .main-media {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-media li {
+    margin-bottom: 60%;
+  }
+
+  /* Project Section */
+  .work-section {
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
+  }
+
+  .work-text-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .work-bar {
+    width: -webkit-fill-available;
+    color: #212121;
+  }
+
+  .work-title {
+    margin-top: 10%;
+    font-size: 2.5em;
+    font-family: 'Crete Round', sans-serif;
+    font-weight: 400;
+    width: 500px;
+    margin-left: 9%;
+    color: #091e42;
+    text-align: center;
+  }
+
+  .work-card {
+    display: grid;
+    grid-template-columns: 5% 50% 40% 5%;
+    margin: 0%;
+  }
+
+  .work-card-img {
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 20em;
+    margin-top: 35%;
+    margin-bottom: -12%;
+  }
+
+  .work-card-img img {
+    width: 42.75em;
+    height: 28em;
+  }
+
+  .work-card-text {
+    grid-column: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 3%;
+  }
+
+  .card-title {
+    font-size: 2.5em;
+    font-family: 'Crete Round', sans-serif;
+    font-weight: 400;
+    margin-top: 0%;
+    margin-left: 0%;
+  }
+
+  .card-text {
+    font-size: 1.25em;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.75em;
+  }
+
+  .ruby {
+    margin-right: 50%;
+  }
+
+  /* Projects Section */
+  .cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 0%;
+    margin-left: 8.5%;
+  }
+
+  .second-cards-container {
+    margin-bottom: 5%;
+  }
+
+  .card-container {
+    height: 25em;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 20em;
+  }
+
+  .card-1 {
+    grid-column: 1;
+    background-image: url(../media/first-project-image.png);
+  }
+
+  .card-1-content {
+    display: none;
+  }
+
+  .second-row-card-1 {
+    grid-column: 1;
+  }
+
+  .card-2 {
+    grid-column: 2;
+    background-image: url(../media/second-project-image.png);
+  }
+
+  .card-content-mobile {
+    display: none;
+  }
+
+  .card-content-desktop {
+    display: inline;
+  }
+
+  .card-3 {
+    grid-column: 3;
+    background-image: url(../media/third-project-image.png);
+  }
+
+  .card-3-desktop {
+    padding-top: 24%;
+  }
+
+  .card-content {
+    margin-top: 10%;
+  }
+
+  .project-title {
+    font-size: 2em;
+    font-family: 'Crete Round', sans-serif;
+    font-weight: 400;
+    line-height: 1em;
+    margin-bottom: 3%;
+  }
+
+  .project-text {
+    font-size: 1.0625em;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 1em;
+    margin-bottom: 4%;
+  }
+
+  .project-btn-container {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    height: 3em;
+  }
+
+  .project-btn-container li {
+    margin-right: 2%;
+  }
+
+  .boostrap-btn {
+    margin-top: 0%;
+  }
+
+  .project-ruby {
+    margin-top: 0%;
+  }
+
+  .project-final-btn {
+    display: none;
+  }
+
+  .first-project-btn {
+    display: inherit;
+    text-decoration: none;
+    margin-top: 102.5%;
+  }
+
+  /* About Me Section */
+  .aboutme-section {
+    margin-top: 10%;
+    background-image: url(../media/aboutme-big-background.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position-x: right;
+    background-position-y: 6em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .aboutme-text {
+    width: 40%;
+    line-height: 2em;
+    font-size: 1.25em;
+    margin-bottom: 2%;
+  }
+
+  .aboutme-button {
+    margin-bottom: 20%;
+  }
+
+  .aboutme-bar {
+    background-color: #fff;
+    width: 90%;
+    height: 1px;
+    margin-bottom: 25%;
+    margin-left: 5%;
+  }
+
+  .aboutme-link {
+    height: 20%;
+  }
+
+  /* Aboutme - Skills */
+  .skills-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -15%;
+  }
+
+  .list-container {
+    width: 30%;
+  }
+
+  .languaje {
+    background-image: url(../media/lenguaje-rectangle.png);
+    background-repeat: no-repeat;
+    background-position-x: 95px;
+  }
+
+  .frameworks {
+    background-position-x: 95px;
+  }
+
+  .skills {
+    background-position-x: 90px;
+  }
+
+  .aboutme-subtitle {
+    margin-left: -15%;
+  }
+
+  .skills-subtitle {
+    margin-left: -30%;
+  }
+
+  .aboutme-text-skills {
+    align-self: flex-start;
+    margin-left: 23%;
+    font-size: 1.3em;
+  }
+
+  /* Contact Me Form */
+  .contact-me-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .abtme-title {
+    margin-top: -65%;
+    text-align: left;
+    font-size: 2.5em;
+    margin-left: 15%;
+    width: 70%;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    margin-right: 20%;
+  }
+
+  .abtme-btn-container {
+    justify-content: flex-start;
+    margin-left: -7%;
+  }
+
+  /* Footer */
+  footer {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-top: -15%;
+  }
+
+  .footer-bar {
+    background-color: #dfe1e6;
+    width: 100%;
+    height: 2px;
+    margin-top: 2%;
+    margin-bottom: 3%;
+  }
+}
+
+/* QUERY 2560 */
+
+/* 2560 changes */
+@media only screen and (min-width: 2560px) {
+  /* Main Section */
+  main {
+    background-size: 40%;
+  }
+
+  .main-container {
+    display: grid;
+    grid-template-columns: 5% 30%;
+  }
+
+  .main-title {
+    font-family: 'Crete Round', sans-serif;
+    font-weight: 400;
+    font-size: 4.5em;
+    width: 70%;
+  }
+
+  .main-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 2em;
+    color: #fff;
+    margin-bottom: 3%;
+  }
+
+  .main-text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1.25em;
+    line-height: 32px;
+  }
+
+  .media-container {
+    margin-top: 140%;
+  }
+
+  .main-media li {
+    margin-bottom: 60%;
+  }
+
+  /* Project Section */
+  .work-section {
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
+  }
+
+  .work-text-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .work-bar {
+    margin-left: 0%;
+    color: #212121;
+    width: 880em;
+  }
+
+  .work-title {
+    margin-top: 10%;
+    font-size: 2.5em;
+    font-family: 'Crete Round', sans-serif;
+    font-weight: 400;
+    width: 95%;
+    margin-left: 10%;
+    margin-right: 0%;
+    color: #091e42;
+  }
+
+  .work-card {
+    display: grid;
+    grid-template-columns: 5% 40% 40% 5%;
+    margin: 0%;
+  }
+
+  .work-card-img {
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 0%;
+    margin-bottom: 15%;
+  }
+
+  .work-card-img img {
+    width: 50em;
+    height: 30em;
+    margin: 0%;
+  }
+
+  .work-card-text {
+    grid-column: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0%;
+  }
+
+  .card-title {
+    font-size: 2.5em;
+    font-family: 'Crete Round', sans-serif;
+    font-weight: 400;
+    margin-top: 0%;
+    margin-left: 0%;
+  }
+
+  .card-text {
+    font-size: 1.25em;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.75em;
+  }
+
+  .ruby {
+    margin-right: 50%;
+  }
+
+  /* Projects Section */
+  .cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 0%;
+    margin-left: 8%;
+  }
+
+  .second-cards-container {
+    margin-bottom: 5%;
+  }
+
+  .card-container {
+    height: 25em;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 20em;
+  }
+
+  .card-1 {
+    grid-column: 1;
+    background-image: url(../media/first-project-image.png);
+  }
+
+  .card-1-content {
+    display: none;
+  }
+
+  .second-row-card-1 {
+    grid-column: 1;
+  }
+
+  .card-2 {
+    grid-column: 2;
+    background-image: url(../media/second-project-image.png);
+  }
+
+  .card-content-mobile {
+    display: none;
+  }
+
+  .card-content-desktop {
+    display: inline;
+  }
+
+  .card-3 {
+    grid-column: 3;
+    background-image: url(../media/third-project-image.png);
+  }
+
+  .card-3-desktop {
+    padding-top: 24%;
+  }
+
+  .card-content {
+    margin-top: 10%;
+  }
+
+  .project-title {
+    font-size: 2em;
+    font-family: 'Crete Round', sans-serif;
+    font-weight: 400;
+    line-height: 1em;
+    margin-bottom: 3%;
+  }
+
+  .project-text {
+    font-size: 1.0625em;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 1em;
+    margin-bottom: 4%;
+  }
+
+  .project-btn-container {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    height: 3em;
+  }
+
+  .project-btn-container li {
+    margin-right: 2%;
+  }
+
+  .boostrap-btn {
+    margin-top: 0%;
+  }
+
+  .project-ruby {
+    margin-top: 0%;
+  }
+
+  .project-final-btn {
+    display: none;
+  }
+
+  .first-project-btn {
+    display: inherit;
+    text-decoration: none;
+    margin-top: 102.5%;
+  }
+
+  /* About Me Section */
+  .aboutme-section {
+    margin-top: 10%;
+    background-image: url(../media/aboutme-big-background.png);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position-x: right;
+    background-position-y: 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .aboutme-text {
+    width: 40%;
+    line-height: 2em;
+    font-size: 1.25em;
+    margin-bottom: 2%;
+  }
+
+  .aboutme-button {
+    margin-bottom: 20%;
+  }
+
+  .aboutme-bar {
+    background-color: #fff;
+    width: 90%;
+    height: 1px;
+    margin-bottom: 25%;
+    margin-left: 5%;
+  }
+
+  .aboutme-link {
+    height: 20%;
+  }
+
+  /* Aboutme - Skills */
+  .skills-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -15%;
+  }
+
+  .list-container {
+    width: 30%;
+  }
+
+  .languaje {
+    background-image: url(../media/lenguaje-rectangle.png);
+    background-repeat: no-repeat;
+    background-position-x: 175px;
+  }
+
+  .frameworks {
+    background-position-x: 175px;
+  }
+
+  .skills {
+    background-position-x: 160px;
+  }
+
+  .aboutme-subtitle {
+    margin-left: -30%;
+  }
+
+  .skills-subtitle {
+    margin-left: -45%;
+  }
+
+  .aboutme-text-skills {
+    align-self: flex-start;
+    margin-left: 23%;
+    font-size: 1.3em;
+  }
+}
