@@ -12,6 +12,9 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto&display=swap"
 		rel="stylesheet">
+	<!-- Boostrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 	<title>Hernán Zamora Portfolio</title>
 </head>
 
@@ -20,20 +23,36 @@
 	<!-- Nav Bar -->
 	<header>
 		<div class="nav-bar">
-			<a href="#">Hernán Zamora</a>
+			<a href="#" class="logo">Hernán Zamora</a>
 			<!-- Nav -->
-			<nav class="menu">
-				<div class="bar"></div>
-				<div class="bar"></div>
-				<div class="bar"></div>
-				<ul class="nav-list">
-					<li class="nav-item"><a href="">Portfolio</a></li>
-					<li class="nav-item"><a href="">About</a></li>
-					<li class="nav-item"><a href="">Contact</a></li>
+			<nav class="menu" id="menu">
+				<div class="ham-menu" id="ham-menu">
+					<div class="bar bar1"></div>
+					<div class="bar bar2"></div>
+					<div class="bar bar3"></div>
+				</div>
+				<ul class="nav-list nav-menu" id="nav-menu">
+					<li class="nav-item"><a href="#portfolio">Portfolio</a></li>
+					<li class="nav-item"><a href="#aboutme">About</a></li>
+					<li class="nav-item"><a href="#contact">Contact</a></li>
 					<li class="nav-item"><a href=""><img src="media/mail-icon.png" alt="Mail Icon" class="mail-icon"></a></li>
 				</ul>
 			</nav>
 		</div>
+
+		<!-- Offcanvas Menu -->
+		<aside class="nav-sidebar">
+			<ul class="offcanvas-list">
+				<li class="offcanvas-item"><a href="#portfolio">Portfolio</a></li>
+				<div class="aside-bar"></div>
+				<li class="offcanvas-item"><a href="#aboutme">About</a></li>
+				<div class="aside-bar"></div>
+				<li class="offcanvas-item"><a href="#contact">Contact</a></li>
+				<div class="aside-bar"></div>
+			</ul>
+		</aside>
+
+
 	</header>
 
 	<!-- Hero/Main Section -->
@@ -66,7 +85,7 @@
 		</section>
 
 		<!-- Works Section -->
-		<section class="work-section">
+		<section class="work-section" id="portfolio">
 			<div class="work-text-container">
 				<h2 class="work-title">My Recent Works</h2>
 				<div class="work-bar"></div>
@@ -261,7 +280,7 @@
 		</section>
 
 		<!-- About Me Section -->
-		<section class="aboutme-section">
+		<section class="aboutme-section" id="aboutme">
 			<div>
 				<h2 class="aboutme-title">About me</h2>
 				<p class="aboutme-text">Hello I'm a software developer! I can help you build a product , feature or website Look
@@ -317,7 +336,7 @@
 		</section>
 
 		<!-- Contact Me Form -->
-		<section class="contact-me-container">
+		<section class="contact-me-container" id="contact">
 			<h2 class="abtme-title">I'm always interested in hearing about new projects, so if you'd like to chat please get
 				in
 				touch</h2>
@@ -332,7 +351,7 @@
 					<button type="submit" class="project-btn getintouch-btn">Get in touch</button>
 				</div>
 			</form>
-			
+
 
 
 			<footer>
@@ -357,9 +376,18 @@
 
 	</main>
 
+
+	<!-- SCRIPTS  -->
+	<!-- Boostrap -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+		crossorigin="anonymous"></script>
+
+	<!-- JS -->
+	<script src="mobile-menu.js"></script>
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/6e8f4ae605.js" crossorigin="anonymous"></script>
 </body>
 
-<!-- Font Awesome -->
-<script src="https://kit.fontawesome.com/6e8f4ae605.js" crossorigin="anonymous"></script>
 
 </html>
