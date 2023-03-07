@@ -113,6 +113,9 @@ Install this project linters:
 - Twitter: [@HernanZamora14](https://twitter.com/HernanZamora14)
 - LinkedIn: [Linkedin](https://www.linkedin.com/in/hernan-zamora-03a697236/)
 
+## 👥 Author <a name="authors">Melanie Cascante</a>
+
+- GitHub: [@Maedea9](https://github.com/Maedea9)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
