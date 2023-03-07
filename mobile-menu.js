@@ -20,7 +20,8 @@ const secondCardContainer = document.getElementById('card-container-two');
 
 const firstCards = [
   {
-    id: 1,
+    grid: 1,
+    id: 2,
     title: 'Professional Art Printing Data',
     text: 'A daily selection of privately personalized reads; no accounts or sign-ups required has been the industry`s standard.',
     technologies: {
@@ -33,7 +34,8 @@ const firstCards = [
 
 const cards = [
   {
-    id: 2,
+    grid: 2,
+    id: 3,
     title: 'Professional Art Printing Data',
     text: 'A daily selection of privately personalized reads; no accounts or sign-ups required has been the industry`s standard.',
     titleDesktop: 'Data Dashboard Healthcare',
@@ -45,7 +47,37 @@ const cards = [
     },
   },
   {
-    id: 3,
+    grid: 3,
+    id: 4,
+    title: 'Professional Art Printing Data',
+    text: 'A daily selection of privately personalized reads; no accounts or sign-ups required has been the industry`s standard.',
+    titleDesktop: 'Website Protfolio',
+    textDesktop: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry`s standard',
+    technologies: {
+      tech1: 'html',
+      tech2: 'Boostrap',
+      tech3: 'Ruby',
+    },
+  },
+];
+
+const secondCards = [
+  {
+    grid: 2,
+    id: 6,
+    title: 'Professional Art Printing Data',
+    text: 'A daily selection of privately personalized reads; no accounts or sign-ups required has been the industry`s standard.',
+    titleDesktop: 'Data Dashboard Healthcare',
+    textDesktop: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry`s standard',
+    technologies: {
+      tech1: 'html',
+      tech2: 'Boostrap',
+      tech3: 'Ruby',
+    },
+  },
+  {
+    grid: 3,
+    id: 7,
     title: 'Professional Art Printing Data',
     text: 'A daily selection of privately personalized reads; no accounts or sign-ups required has been the industry`s standard.',
     titleDesktop: 'Website Protfolio',
@@ -61,8 +93,8 @@ const cards = [
 const renderFirstCards = (firstCards, containerName) => {
   firstCards.forEach((item) => {
     const card = document.createElement('div');
-    card.classList = `card-container card-${item.id}`;
-    card.innerHTML = `<div class="card-content card-${item.id}-content">
+    card.classList = `card-container card-${item.grid}`;
+    card.innerHTML = `<div class="card-content card-${item.grid}-content">
                         <h3 class="project-title">${item.title}</h3>
                         <p class="project-text">${item.text}</p>
                         <div>
@@ -78,9 +110,8 @@ const renderFirstCards = (firstCards, containerName) => {
                           </ul>
                         </div>
                       </div>
-                      <a href="#" rel="noopener noreferrer" class="first-project-btn"><button
-                          class="project-final-btn first-project-btn" type="button">See
-                          Project</button></a>`;
+                      <button class="project-final-btn first-project-btn"  data-modal-target='#popup${item.id}' type="button">See
+                          Project</button>`;
     containerName.appendChild(card);
   });
 };
@@ -88,8 +119,8 @@ const renderFirstCards = (firstCards, containerName) => {
 const renderRestOfFirstCards = (cards, containerName) => {
   cards.forEach((item) => {
     const card = document.createElement('div');
-    card.classList = `card-container card-${item.id}`;
-    card.innerHTML = `<div class="card-content card-${item.id}-content">
+    card.classList = `card-container card-${item.grid}`;
+    card.innerHTML = `<div class="card-content card-${item.grid}-content">
                         <div class="card-content-mobile">
                           <h3 class="project-title">${item.title}</h3>
                           <p class="project-text">${item.text}</p>
@@ -111,9 +142,8 @@ const renderRestOfFirstCards = (cards, containerName) => {
                           </ul>
                         </div>
                       </div>
-                      <a href="#" rel="noopener noreferrer" class="first-project-btn"><button
-                          class="project-final-btn" type="button">See
-                          Project</button></a>`;
+                      <button class="project-final-btn" data-modal-target="#popup${item.id}" type="button">See
+                          Project</button>`;
     containerName.appendChild(card);
   });
 };
@@ -121,8 +151,8 @@ const renderRestOfFirstCards = (cards, containerName) => {
 const renderFirstCardsAgain = (firstCards, containerName) => {
   firstCards.forEach((item) => {
     const card = document.createElement('div');
-    card.classList = `card-container second-row-card-${item.id}`;
-    card.innerHTML = `<div class="card-content card-${item.id}-content">
+    card.classList = `card-container second-row-card-${item.grid}`;
+    card.innerHTML = `<div class="card-content card-${item.grid}-content">
                         <h3 class="project-title">${item.title}</h3>
                         <p class="project-text">${item.text}</p>
                         <div>
@@ -138,8 +168,7 @@ const renderFirstCardsAgain = (firstCards, containerName) => {
                           </ul>
                         </div>
                       </div>
-                      <a href="#" rel="noopener noreferrer" class="first-project-btn"><button
-                          class="project-final-btn" type="button">See
+                      <button class="project-final-btn" data-modal-target="#popup5" type="button">See
                           Project</button></a>`;
     containerName.appendChild(card);
   });
@@ -148,6 +177,183 @@ const renderFirstCardsAgain = (firstCards, containerName) => {
 renderFirstCards(firstCards, firstCardContainer);
 renderRestOfFirstCards(cards, firstCardContainer);
 renderFirstCardsAgain(firstCards, secondCardContainer);
-renderRestOfFirstCards(cards, secondCardContainer);
+renderRestOfFirstCards(secondCards, secondCardContainer);
+
+/* PopUp Cards */
+
+/* name, description, featured image, technologies, link to live version, link to source */
+
+const modalCards = [
+  {
+    id: 1,
+    title: 'Multi Post Stories',
+    text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    img: 'media/popup-image.png',
+    features: {
+      tech1: 'html',
+      tech2: 'boostrap',
+      tech3: 'Ruby on rails',
+    },
+    linkLiveVersion: 'https://projecttrial.netlify.app/',
+    linkSource: 'https://github.com/hernandanielzamora/Portfolio',
+  },
+  {
+    id: 2,
+    title: 'Keeping track of hundreds  of components website A',
+    text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
+    img: 'media/popup-image.png',
+    features: {
+      tech1: 'html',
+      tech2: 'boostrap',
+      tech3: 'Ruby on rails',
+    },
+    linkLiveVersion: 'https://projecttrial.netlify.app/',
+    linkSource: 'https://github.com/hernandanielzamora/Portfolio',
+  },
+  {
+    id: 3,
+    title: 'Keeping track of hundreds  of components website B',
+    text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
+    img: 'media/popup-image.png',
+    features: {
+      tech1: 'html',
+      tech2: 'boostrap',
+      tech3: 'Ruby on rails',
+    },
+    linkLiveVersion: 'https://projecttrial.netlify.app/',
+    linkSource: 'https://github.com/hernandanielzamora/Portfolio',
+  },
+  {
+    id: 4,
+    title: 'Keeping track of hundreds  of components website C',
+    text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
+    img: 'media/popup-image.png',
+    features: {
+      tech1: 'html',
+      tech2: 'boostrap',
+      tech3: 'Ruby on rails',
+    },
+    linkLiveVersion: 'https://projecttrial.netlify.app/',
+    linkSource: 'https://github.com/hernandanielzamora/Portfolio',
+  },
+  {
+    id: 5,
+    title: 'Keeping track of hundreds  of components website D',
+    text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
+    img: 'media/popup-image.png',
+    features: {
+      tech1: 'html',
+      tech2: 'boostrap',
+      tech3: 'Ruby on rails',
+    },
+    linkLiveVersion: 'https://projecttrial.netlify.app/',
+    linkSource: 'https://github.com/hernandanielzamora/Portfolio',
+  },
+  {
+    id: 6,
+    title: 'Keeping track of hundreds  of components website E',
+    text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
+    img: 'media/popup-image.png',
+    features: {
+      tech1: 'html',
+      tech2: 'boostrap',
+      tech3: 'Ruby on rails',
+    },
+    linkLiveVersion: 'https://projecttrial.netlify.app/',
+    linkSource: 'https://github.com/hernandanielzamora/Portfolio',
+  },
+  {
+    id: 7,
+    title: 'Keeping track of hundreds  of components website F',
+    text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
+    img: 'media/popup-image.png',
+    features: {
+      tech1: 'html',
+      tech2: 'boostrap',
+      tech3: 'Ruby on rails',
+    },
+    linkLiveVersion: 'https://projecttrial.netlify.app/',
+    linkSource: 'https://github.com/hernandanielzamora/Portfolio',
+  },
+];
 
 /* PopUp Windows */
+const popupContainer = document.getElementById('popup-container');
+
+const renderPopup = (modalCards, popupContainer) => {
+  modalCards.forEach((e) => {
+    const modalCard = document.createElement('div');
+    modalCard.classList = 'popup';
+    modalCard.id = `popup${e.id}`;
+    modalCard.innerHTML = `<div class="popup-wrap-content">
+                            <div class="popup-header">
+                              <h2 class="popup-title">${e.title}</h2><button class="popup-close-btn"
+                                data-close-button>&times;</button>
+                            </div>
+                            <div>
+                              <ul class="popup-btn-container">
+                                <li><button class="feature-btn popup-feature" type="button">${e.features.tech1}</button></li>
+                                <li><button class="feature-btn boostrap popup-feature" type="button">${e.features.tech2}</button></li>
+                                <li><button class="feature-btn feature-ruby-popup popup-feature" type="button">${e.features.tech3}</button></li>
+                              </ul>
+                            </div>
+                            <div class="popup-content">
+                              <img src="${e.img}" alt="">
+                              <p class="popup-text">${e.text}</p>
+                            </div>
+                            <div class="popup-project-btn-container">
+                              <a href="${e.linkLiveVersion}"><button class="project-btn-popup">See Live <img src="media/icon-btn-popup.png"
+                                    alt="Icon See Live"></button></a>
+                              <a href="${e.linkSource}"><button class="project-btn-popup">See Source <img src="media/github-popup-icon.png"
+                                    alt="Github Icon"></button></a>
+                            </div>
+                          </div>`;
+
+    popupContainer.appendChild(modalCard);
+  });
+};
+
+renderPopup(modalCards, popupContainer);
+
+const closePopupButtons = document.querySelectorAll('[data-close-button]');
+const openPopupButtons = document.querySelectorAll('[data-modal-target]');
+const overlay = document.getElementById('overlay');
+
+/* Open Popups Function */
+const openPopup = (modal) => {
+  if (modal == null) return;
+  modal.classList.add('active');
+  overlay.classList.add('active');
+};
+
+/* Close Popups Function */
+const closePopup = (modal) => {
+  if (modal == null) return;
+  modal.classList.remove('active');
+  overlay.classList.remove('active');
+};
+
+/* Opening Popups */
+openPopupButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    const popup = document.querySelector(button.dataset.modalTarget);
+    openPopup(popup);
+  });
+});
+
+/* Closing Popups */
+closePopupButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    const popup = button.closest('.popup');
+    closePopup(popup);
+  });
+});
+
+/* Closing the popup when clicking outside */
+
+overlay.addEventListener('click', () => {
+  const popups = document.querySelectorAll('.popup.active');
+  popups.forEach((modal) => {
+    closePopup(modal);
+  });
+});

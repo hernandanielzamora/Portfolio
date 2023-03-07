@@ -399,13 +399,110 @@ li {
 /* Pop Up Windows */
 .popup {
   position: fixed;
-  top: 8%;
+  top: 2%;
   left: 5%;
   right: 5%;
   bottom: 5%;
   background-color: #fff;
   z-index: 10;
-  height: 100vh;
+  max-width: 90%;
+  height: fit-content;
+  transform: scale(0);
+  transition: 0.2s ease-in-out;
+  overflow: auto;
+}
+
+.popup.active {
+  transform: scale(1);
+}
+
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 5% -2% 20% 5%;
+  align-items: center;
+}
+
+.popup-close-btn {
+  margin-right: 8%;
+  margin-top: -6%;
+  color: #67798e;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 2.5em;
+}
+
+.popup-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 2em;
+  color: #172b4d;
+}
+
+.popup-text {
+  font-size: 1em;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+}
+
+.popup-btn-container {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 3%;
+}
+
+.popup-feature {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.8em;
+  font-weight: 600;
+}
+
+.feature-ruby-popup {
+  width: 8em;
+}
+
+.popup-content {
+  display: flex;
+  flex-direction: column;
+  margin: auto 4%;
+}
+
+.popup-project-btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.project-btn-popup {
+  width: 8em;
+  height: 48px;
+  background-color: #ff6b00;
+  color: #fff;
+  border: 1px solid #8993a4;
+  text-align: center;
+  font-family: 'inter', sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+  margin-bottom: 5%;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  pointer-events: none;
+}
+
+#overlay.active {
+  pointer-events: all;
+  opacity: 1;
+  filter: blur(10px);
 }
 
 /* About Me Section */
@@ -605,10 +702,11 @@ footer {
 }
 
 /* Desktop Version */
+
 /* QUERY  768 -> 1024 */
+
 /* 768 changes */
 @media only screen and (min-width: 768px) {
-
   /* NavBar */
   .menu {
     width: 35%;
@@ -971,9 +1069,9 @@ footer {
 }
 
 /* QUERY  1024 -> 1440 */
+
 /* 1024 changes */
 @media only screen and (min-width: 1024px) {
-
   /* Main Section */
   .main-title {
     font-family: 'Crete Round', sans-serif;
@@ -1297,9 +1395,9 @@ footer {
 }
 
 /* QUERY 1440 -> 2560 */
+
 /* 1440 changes */
 @media only screen and (min-width: 1440px) {
-
   /* NavBar */
   .menu {
     width: 35%;
@@ -1687,9 +1785,9 @@ footer {
 }
 
 /* QUERY 2560 */
+
 /* 2560 changes */
 @media only screen and (min-width: 2560px) {
-
   /* Main Section */
   main {
     background-size: 40%;
