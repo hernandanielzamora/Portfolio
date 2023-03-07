@@ -115,7 +115,7 @@ Install this project linters:
 
 ## 👥 Author <a name="authors">Melanie Cascante</a>
 
-- GitHub: [@Maedea9]([https://github.com/hernandanielzamora](https://github.com/Maedea9))
+- GitHub: [@Maedea9](https://github.com/Maedea9)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
