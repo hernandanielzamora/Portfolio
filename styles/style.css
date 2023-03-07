@@ -247,9 +247,7 @@ main {
 /* Buttons */
 .btn-container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
+  justify-content: flex-start;
   margin-bottom: 2%;
 }
 
@@ -266,6 +264,7 @@ li {
   text-align: center;
   font-weight: 500;
   font-size: 15px;
+  margin: 5px;
 }
 
 .ruby {
@@ -305,6 +304,10 @@ li {
   background-size: 100%;
   height: 340px;
   background-repeat: no-repeat;
+}
+
+.second-cards-container {
+  margin-bottom: 40%;
 }
 
 .card-content {
@@ -391,6 +394,18 @@ li {
 
 .card-content-desktop {
   display: none;
+}
+
+/* Pop Up Windows */
+.popup {
+  position: fixed;
+  top: 8%;
+  left: 5%;
+  right: 5%;
+  bottom: 5%;
+  background-color: #fff;
+  z-index: 10;
+  height: 100vh;
 }
 
 /* About Me Section */
@@ -590,11 +605,10 @@ footer {
 }
 
 /* Desktop Version */
-
 /* QUERY  768 -> 1024 */
-
 /* 768 changes */
 @media only screen and (min-width: 768px) {
+
   /* NavBar */
   .menu {
     width: 35%;
@@ -788,6 +802,10 @@ footer {
     padding-top: 26%;
   }
 
+  .card-3-content {
+    padding-top: 26%;
+  }
+
   .card-content {
     margin-top: 10%;
   }
@@ -953,9 +971,9 @@ footer {
 }
 
 /* QUERY  1024 -> 1440 */
-
 /* 1024 changes */
 @media only screen and (min-width: 1024px) {
+
   /* Main Section */
   .main-title {
     font-family: 'Crete Round', sans-serif;
@@ -1279,9 +1297,9 @@ footer {
 }
 
 /* QUERY 1440 -> 2560 */
-
 /* 1440 changes */
 @media only screen and (min-width: 1440px) {
+
   /* NavBar */
   .menu {
     width: 35%;
@@ -1669,9 +1687,9 @@ footer {
 }
 
 /* QUERY 2560 */
-
 /* 2560 changes */
 @media only screen and (min-width: 2560px) {
+
   /* Main Section */
   main {
     background-size: 40%;
