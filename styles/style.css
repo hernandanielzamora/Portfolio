@@ -405,11 +405,11 @@ li {
   bottom: 5%;
   background-color: #fff;
   z-index: 10;
-  max-width: 90%;
-  height: fit-content;
+  height: 80vh;
   transform: scale(0);
   transition: 0.2s ease-in-out;
-  overflow: auto;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .popup.active {
@@ -953,6 +953,42 @@ footer {
     margin-top: 97.8%;
   }
 
+  /* Pop Up Windows */
+  .popup {
+    height: 80vh;
+  }
+
+  .popup-header {
+    margin: 5% 0% 0% 5%;
+  }
+
+  .popup-title {
+    font-size: 2em;
+  }
+
+  .popup-text {
+    font-size: 1em;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    margin-left: 2%;
+  }
+
+  .popup-btn-container {
+    margin-bottom: 10%;
+  }
+
+  .popup-content {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .popup-project-btn-container {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin-left: 48%;
+  }
+
   /* About Me Section */
   .aboutme-section {
     margin-top: 10%;
@@ -1274,6 +1310,27 @@ footer {
     display: inherit;
     text-decoration: none;
     margin-top: 102.5%;
+  }
+
+  /* PopupWindow */
+  .popup-content {
+    height: 30vh;
+  }
+
+  .popup-text {
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+  }
+
+  .popup-btn-container {
+    padding-left: 4.5%;
+  }
+
+  .popup-project-btn-container {
+    justify-content: space-evenly;
+    width: 50%;
+    padding-right: 20%;
   }
 
   /* About Me Section */
@@ -1668,6 +1725,45 @@ footer {
     margin-top: 102.5%;
   }
 
+  /* Pop Up Windows */
+  .popup {
+    height: 80vh;
+  }
+
+  .popup-header {
+    margin: 4% 0% 0% 5%;
+  }
+
+  .popup-title {
+    font-size: 2em;
+  }
+
+  .popup-content {
+    height: fit-content;
+    margin-bottom: -5%;
+  }
+
+  .popup-content img {
+    width: 41em;
+    height: 28em;
+  }
+
+  .popup-btn-container {
+    margin-bottom: 4%;
+  }
+
+  .popup-text {
+    align-items: flex-start;
+    font-size: 1.5em;
+    margin-bottom: 7%;
+  }
+
+  .popup-project-btn-container {
+    justify-content: space-evenly;
+    width: 40%;
+    padding-right: 2%;
+  }
+
   /* About Me Section */
   .aboutme-section {
     margin-top: 10%;
@@ -2011,6 +2107,45 @@ footer {
     display: inherit;
     text-decoration: none;
     margin-top: 102.5%;
+  }
+
+  /* Pop Up Windows */
+  .popup {
+    height: 80vh;
+  }
+
+  .popup-header {
+    margin: 4% 0% 0% 5%;
+  }
+
+  .popup-title {
+    font-size: 2em;
+  }
+
+  .popup-content {
+    height: fit-content;
+    margin-bottom: -5%;
+  }
+
+  .popup-content img {
+    width: 41em;
+    height: 28em;
+  }
+
+  .popup-btn-container {
+    margin-bottom: 4%;
+  }
+
+  .popup-text {
+    align-items: flex-start;
+    font-size: 1.5em;
+    margin-bottom: 7%;
+  }
+
+  .popup-project-btn-container {
+    justify-content: space-evenly;
+    width: 40%;
+    padding-right: 2%;
   }
 
   /* About Me Section */
