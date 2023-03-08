@@ -363,8 +363,6 @@ overlay.addEventListener('click', () => {
 const checkLowerCase = (str) => {
   const check = str.toString().toLowerCase();
   if (str === check) {
-    console.log(check);
-    console.log('ok');
     return true;
   }
   return false;
@@ -375,9 +373,15 @@ const validateForm = (e) => {
   const mail = document.getElementById('email-input').value;
   const form = document.getElementById('contact-form');
   const checkMailCase = checkLowerCase(mail);
+  const formInputs = {
+    name: document.getElementById('name-input'),
+    mail,
+    text: document.getElementById('text-input'),
+  };
   if (checkMailCase) {
     form.action = 'https://formspree.io/f/xdovglwp';
     form.submit();
+    localStorage.setItem('formInput', JSON.stringify(formInputs));
   } else {
     const errorHandler = document.getElementById('error-msg');
     errorHandler.innerHTML = 'Please check your email. The content of the email field has to be in lower case.';
