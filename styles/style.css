@@ -21,7 +21,7 @@
   text-decoration: none;
   text-align: center;
   font-size: 1em;
-  margin-left: 8.6%;
+  margin-left: 8.5%;
   color: #fff;
   font-family: 'Roboto', sans-serif;
 }
@@ -50,7 +50,7 @@
   justify-content: center;
   width: 10%;
   height: 55%;
-  margin-right: 8.6%;
+  margin-right: 8.5%;
 }
 
 .menu-btn {
@@ -154,13 +154,13 @@ main {
   flex-direction: column;
   padding-top: 30%;
   margin: 0% 5% 25% 5%;
-  width: 85%;
+  width: 84%;
 }
 
 .main-title {
   color: #ff6b00;
   font-family: 'Crete Round', sans-serif;
-  font-size: 3.5em;
+  font-size: 3.4em;
   font-weight: 100;
   margin-bottom: 1.5%;
 }
@@ -233,7 +233,7 @@ main {
 .card-title {
   font-family: 'Crete Round', sans-serif;
   font-size: 1.5em;
-  font-weight: 150;
+  font-weight: 149;
   margin: 4% 0;
 }
 
@@ -658,9 +658,21 @@ textarea {
 
 .abtme-btn-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin-top: 5%;
   margin-bottom: 40%;
+}
+
+.error-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+  text-align: center;
+  margin: auto 10%;
+  color: #fa0e0e;
+  align-self: center;
 }
 
 .getintouch-btn {
