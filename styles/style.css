@@ -234,12 +234,12 @@ main {
   font-family: 'Crete Round', sans-serif;
   font-size: 1.5em;
   font-weight: 149;
-  margin: 4% 0;
+  margin: 5% 0;
 }
 
 .card-text {
   font-family: 'Inter', sans-serif;
-  margin-bottom: 3%;
+  margin-bottom: 4%;
   font-size: 16px;
   font-weight: 400;
 }
@@ -248,7 +248,7 @@ main {
 .btn-container {
   display: flex;
   justify-content: flex-start;
-  margin-bottom: 2%;
+  margin-bottom: 3%;
 }
 
 li {
@@ -281,7 +281,7 @@ li {
   font-family: 'inter', sans-serif;
   font-weight: 700;
   font-size: 1em;
-  margin-bottom: 5%;
+  margin-bottom: 4%;
 }
 
 .project-btn:hover {
@@ -307,7 +307,7 @@ li {
 }
 
 .second-cards-container {
-  margin-bottom: 40%;
+  margin-bottom: 41%;
 }
 
 .card-content {
