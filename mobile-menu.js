@@ -368,6 +368,7 @@ const checkLowerCase = (str) => {
   return false;
 };
 
+/* Validate Form */
 const validateForm = (e) => {
   e.preventDefault();
   const mail = document.getElementById('email-input').value;
