@@ -387,6 +387,7 @@ const validateForm = (e) => {
     errorHandler.innerHTML = 'Please check your email. The content of the email field has to be in lower case.';
   }
 };
+
 const form = document.getElementById('contact-form');
 form.addEventListener('submit', validateForm);
 
