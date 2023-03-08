@@ -357,3 +357,31 @@ overlay.addEventListener('click', () => {
     closePopup(modal);
   });
 });
+
+/* Validating Form */
+
+const checkLowerCase = (str) => {
+  const check = str.toString().toLowerCase();
+  if (str === check) {
+    console.log(check);
+    console.log('ok');
+    return true;
+  }
+  return false;
+};
+
+const validateForm = (e) => {
+  e.preventDefault();
+  const mail = document.getElementById('email-input').value;
+  const form = document.getElementById('contact-form');
+  const checkMailCase = checkLowerCase(mail);
+  if (checkMailCase) {
+    form.action = 'https://formspree.io/f/xdovglwp';
+    form.submit();
+  } else {
+    const errorHandler = document.getElementById('error-msg');
+    errorHandler.innerHTML = 'Please check your email. The content of the email field has to be in lower case.';
+  }
+};
+const form = document.getElementById('contact-form');
+form.addEventListener('submit', validateForm);

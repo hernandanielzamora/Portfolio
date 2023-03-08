@@ -658,9 +658,21 @@ textarea {
 
 .abtme-btn-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin-top: 5%;
   margin-bottom: 40%;
+}
+
+.error-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+  text-align: center;
+  margin: auto 10%;
+  color: #fa0e0e;
+  align-self: center;
 }
 
 .getintouch-btn {
